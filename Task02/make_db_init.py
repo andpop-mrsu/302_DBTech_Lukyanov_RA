@@ -12,13 +12,13 @@ def extract_year(title):
 def main():
     sql_lines = []
 
-    # DROP TABLES
+
     sql_lines.append("DROP TABLE IF EXISTS movies;")
     sql_lines.append("DROP TABLE IF EXISTS ratings;")
     sql_lines.append("DROP TABLE IF EXISTS tags;")
     sql_lines.append("DROP TABLE IF EXISTS users;")
 
-    # CREATE TABLES
+
     sql_lines.append("""
 CREATE TABLE movies (
     id INTEGER PRIMARY KEY,
@@ -77,7 +77,7 @@ CREATE TABLE users (
             genres = row["genres"].replace("'", "''")
             sql_lines.append(f"INSERT INTO movies VALUES ({movie_id}, '{title}', {year if year else 'NULL'}, '{genres}');")
 
-    # Ratings
+
     with open("dataset/ratings.csv", "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         i = 1
@@ -85,7 +85,7 @@ CREATE TABLE users (
             sql_lines.append(f"INSERT INTO ratings VALUES ({i}, {row['userId']}, {row['movieId']}, {row['rating']}, {row['timestamp']});")
             i += 1
 
-    # Tags
+
     with open("dataset/tags.csv", "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         i = 1
