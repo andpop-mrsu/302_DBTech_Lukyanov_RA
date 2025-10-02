@@ -44,4 +44,3 @@ echo " "
 
 echo "Год с наименьшим количеством регистраций:"
 sqlite3 movies_rating.db -box -echo "SELECT SUBSTR(register_date, 1, 4) AS registration_year, COUNT(*) AS user_count FROM users GROUP BY registration_year ORDER BY user_count ASC LIMIT 1;"
-pause
