@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border: 2px solid #000000;
+}
+
+h1 {
+    color: #000000;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid #000000;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 2px solid #000000;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #000000;
+}
+
+th {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.actions {
+    white-space: nowrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 2px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-delete {
+    border-color: #000000;
+}
+
+.btn-delete:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-add {
+    font-size: 16px;
+    padding: 12px 24px;
+    font-weight: bold;
+}
+
+.btn-submit {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.add-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #000000;
+    background-color: #f0f0f0;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.delete-confirmation {
+    background-color: #f0f0f0;
+    border: 2px solid #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.delete-confirmation p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.info-box {
+    background-color: #f0f0f0;
+    border-left: 5px solid #000000;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.info-box p {
+    margin: 5px 0;
+    color: #000000;
+}
+
+.info-box strong {
+    color: #000000;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.message {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #000000;
+}
+
+.message-success {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+.message-error {
+    background-color: #f0f0f0;
+    color: #000000;
+    font-weight: bold;
+}
